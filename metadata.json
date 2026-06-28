@@ -1,0 +1,6 @@
+{
+  "name": "Ankit's Anime",
+  "description": "Premium Material 3 Anime streaming experience with offline library, dynamic download manager, bilingual (English/Hindi) support, custom watch history, and light/dark theme modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

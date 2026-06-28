@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-accent: #FF4D00;
+}
+
+/* Sleek Interface Custom styles */
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.accent-glow {
+  text-shadow: 0 0 15px rgba(255, 77, 0, 0.5);
+}
+
+.nav-item-active {
+  background: linear-gradient(90deg, rgba(255, 77, 0, 0.2) 0%, transparent 100%);
+  border-left: 3px solid #FF4D00;
+}
+
+.poster-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.8);
+}
+
+/* Base custom resets for mobile app emulation */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  background-color: #080808;
+}
+
+/* Hide scrollbars for chrome/safari/opera and firefox */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Color theme overrides for clean light mode inside the viewport */
+.light-mode-container {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+}
+
